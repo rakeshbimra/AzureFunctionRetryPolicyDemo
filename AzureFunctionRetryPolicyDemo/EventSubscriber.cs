@@ -67,9 +67,10 @@ namespace AzureFunctionRetryPolicyDemo
         }
 
         /// <summary>
-        /// 
+        /// Exponential back off retry policy
         /// </summary>
         /// <returns>The IAsyncPolicy instance.</returns>
+        /// <remarks></remarks>
         private IAsyncPolicy GetExponentialBackoffRetryPolicy()
         {
             var policy = Policy
@@ -97,9 +98,10 @@ namespace AzureFunctionRetryPolicyDemo
         }
 
         /// <summary>
-        /// 
+        /// Throttling aware retry policy
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The IAsyncPolicy instance.</returns>
+        /// <remarks></remarks>
         private IAsyncPolicy GetThrottlingAwareRetryPolicy()
         {
             var policy = Policy
